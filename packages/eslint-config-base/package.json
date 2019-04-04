@@ -1,0 +1,8 @@
+{
+    "name": "@openjck/eslint-config-base",
+    "version": "1.0.0",
+    "main": "index.js",
+    "peerDependencies": {
+        "eslint-config-airbnb-base": "^13.1.0"
+    }
+}

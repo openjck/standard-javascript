@@ -1,0 +1,16 @@
+{
+    "name": "standard-javascript",
+    "scripts": {
+        "format": "prettier --config packages/prettier-config-base/index.js --write '**/*.js'",
+        "lint": "eslint --ext .js .",
+        "test": "jest"
+    },
+    "devDependencies": {
+        "eslint": "5.16.0",
+        "eslint-config-airbnb-base": "13.1.0",
+        "eslint-plugin-import": "2.16.0",
+        "eslint-plugin-jest": "22.4.1",
+        "jest": "24.7.0",
+        "prettier": "1.16.4"
+    }
+}
