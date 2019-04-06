@@ -1,7 +1,7 @@
 {
     "name": "@openjck/eslint-config-base",
     "description": "The personal eslint configuration of John Karahalis",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": {
         "name": "John Karahalis",
         "email": "john.karahalis@gmail.com",
