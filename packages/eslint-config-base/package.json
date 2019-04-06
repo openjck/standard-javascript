@@ -9,8 +9,8 @@
     },
     "license": "GPL-3.0",
     "repository": {
-        "type" : "git",
-        "url" : "https://github.com/openjck/standard-javascript.git",
+        "type": "git",
+        "url": "https://github.com/openjck/standard-javascript.git",
         "directory": "packages/eslint-config-base"
     },
     "bugs": "https://github.com/openjck/standard-javascript/issues",
