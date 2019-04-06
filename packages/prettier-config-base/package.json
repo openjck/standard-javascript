@@ -1,5 +1,27 @@
 {
-  "name": "@openjck/prettier-config-base",
-  "version": "1.0.0",
-  "main": "index.js"
+    "name": "@openjck/prettier-config-base",
+    "description": "The personal prettier configuration of John Karahalis",
+    "version": "1.0.0",
+    "author": {
+        "name": "John Karahalis",
+        "email": "john.karahalis@gmail.com",
+        "url": "https://www.johnkarahalis.com"
+    },
+    "license": "GPL-3.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/openjck/standard-javascript.git",
+        "directory": "packages/prettier-config-base"
+    },
+    "bugs": "https://github.com/openjck/standard-javascript/issues",
+    "main": "index.js",
+    "engines": {
+        "node": ">=8"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "peerDependencies": {
+        "prettier": "^1.16.4"
+    }
 }
