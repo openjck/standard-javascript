@@ -1,7 +1,7 @@
 {
     "name": "@openjck/prettier-config-base",
     "description": "The personal prettier configuration of John Karahalis",
-    "version": "1.0.4",
+    "version": "1.0.6",
     "author": {
         "name": "John Karahalis",
         "email": "john.karahalis@gmail.com",

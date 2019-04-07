@@ -1,7 +1,7 @@
 {
     "name": "@openjck/eslint-config-base",
     "description": "The personal eslint configuration of John Karahalis",
-    "version": "1.0.3",
+    "version": "1.0.6",
     "author": {
         "name": "John Karahalis",
         "email": "john.karahalis@gmail.com",
@@ -22,7 +22,7 @@
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "dependencies": {
-        "core": "^1.0.3",
+        "core": "^1.0.6",
         "eslint-config-airbnb-base": "13.1.0"
     },
     "peerDependencies": {
