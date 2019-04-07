@@ -1,6 +1,6 @@
 {
-    "name": "@openjck/prettier-config-base",
-    "description": "The personal prettier configuration of John Karahalis",
+    "name": "@openjck/eslint-config-react",
+    "description": "The personal React eslint configuration of John Karahalis",
     "author": {
         "name": "John Karahalis",
         "email": "john.karahalis@gmail.com",
@@ -10,7 +10,7 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/openjck/standard-javascript.git",
-        "directory": "packages/prettier-config-base"
+        "directory": "packages/eslint-config-react"
     },
     "bugs": "https://github.com/openjck/standard-javascript/issues",
     "main": "index.js",
@@ -20,7 +20,14 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
+    "dependencies": {
+        "@openjck/eslint-config-base": "1.0.2",
+        "eslint-config-airbnb": "17.1.0"
+    },
     "peerDependencies": {
-        "prettier": "^1.16.4"
+        "eslint": "^5.16.0",
+        "eslint-plugin-import": "^2.16.0",
+        "eslint-plugin-jsx-a11y": "^6.2.1",
+        "eslint-plugin-react": "^7.12.4"
     }
 }

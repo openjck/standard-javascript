@@ -1,4 +1,4 @@
-const { amendRule } = require('./utils');
+const { amendRule } = require('./index');
 
 describe('amendRule', () => {
     test('Unexpected input', () => {

@@ -1,7 +1,7 @@
 const style = require('eslint-config-airbnb-base/rules/style');
 const variables = require('eslint-config-airbnb-base/rules/variables');
 const bestPractices = require('eslint-config-airbnb-base/rules/best-practices');
-const { amendRule } = require('./utils');
+const { amendRule } = require('core');
 
 const defaults = Object.assign(
     {},
