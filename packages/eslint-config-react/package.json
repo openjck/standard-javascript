@@ -1,7 +1,7 @@
 {
     "name": "@openjck/eslint-config-react",
     "description": "The personal React eslint configuration of John Karahalis",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "author": {
         "name": "John Karahalis",
         "email": "john.karahalis@gmail.com",
@@ -25,7 +25,7 @@
         "access": "public"
     },
     "dependencies": {
-        "@openjck/eslint-config-base": "1.0.8",
+        "@openjck/eslint-config-base": "1.0.10",
         "eslint-config-airbnb": "17.1.0"
     },
     "peerDependencies": {
