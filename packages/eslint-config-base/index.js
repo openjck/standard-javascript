@@ -23,6 +23,7 @@ module.exports = {
             { builtinGlobals: true },
         ]),
         'no-plusplus': amendRule(defaults['no-plusplus'], [
+            null,
             { allowForLoopAfterthoughts: true },
         ]),
 
