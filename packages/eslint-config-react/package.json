@@ -1,7 +1,7 @@
 {
     "name": "@openjck/eslint-config-react",
     "description": "The personal React eslint configuration of John Karahalis",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "author": {
         "name": "John Karahalis",
         "email": "john.karahalis@gmail.com",
@@ -21,7 +21,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "pubishConfig": {
+    "publishConfig": {
         "access": "public"
     },
     "dependencies": {
