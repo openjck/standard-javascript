@@ -1,7 +1,7 @@
 {
     "name": "@openjck/eslint-config-react",
     "description": "The personal React eslint configuration of John Karahalis",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "author": {
         "name": "John Karahalis",
         "email": "john.karahalis@gmail.com",

@@ -1,7 +1,7 @@
 {
     "name": "@openjck/eslint-config-base",
     "description": "The personal eslint configuration of John Karahalis",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "author": {
         "name": "John Karahalis",
         "email": "john.karahalis@gmail.com",
@@ -26,7 +26,7 @@
         "access": "public"
     },
     "dependencies": {
-        "core": "1.0.6",
+        "core": "^1.0.7",
         "eslint-config-airbnb-base": "13.1.0"
     },
     "peerDependencies": {
