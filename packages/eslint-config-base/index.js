@@ -22,6 +22,9 @@ module.exports = {
             null,
             { builtinGlobals: true },
         ]),
+        'no-plusplus': amendRule(defaults['no-plusplus'], [
+            { allowForLoopAfterthoughts: true },
+        ]),
 
         // Change some airbnb rules that conflict with Prettier style
         'operator-linebreak': amendRule(defaults['operator-linebreak'], [
