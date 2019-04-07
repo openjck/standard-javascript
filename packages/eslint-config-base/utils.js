@@ -1,23 +1,31 @@
+function isObjectLiteral(value) {
+    return typeof value === 'object' && !Array.isArray(value);
+}
+
 exports.amendRule = (base, override) => {
-    if (!override || typeof base !== typeof override) return base;
+    if (!override) return base;
 
     let overwritten;
 
     if (typeof base === 'string') {
+        if (Array.isArray(override)) {
+            overwritten = override;
+            if (!override[0]) {
+                overwritten[0] = base;
+            }
+        }
         overwritten = override;
-    } else if (typeof base === 'object' && !Array.isArray(base)) {
+    } else if (isObjectLiteral(base)) {
         overwritten = Object.assign({}, base, override);
     } else if (Array.isArray(base)) {
+        if (typeof base !== typeof override) return override;
+
         overwritten = base.map((element, index) => {
             if (!override[index]) {
                 return element;
             }
 
-            if (
-                element !== null &&
-                typeof element === 'object' &&
-                !Array.isArray(element)
-            ) {
+            if (element !== null && isObjectLiteral(element)) {
                 return Object.assign({}, element, override[index]);
             }
 
