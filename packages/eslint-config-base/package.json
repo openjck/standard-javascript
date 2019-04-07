@@ -21,8 +21,12 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
+    "gitHead": "9eed6f42422fe35ceb6518dc00ce4de4642db127",
+    "pubishConfig": {
+        "access": "public"
+    },
     "dependencies": {
-        "core": "^1.0.6",
+        "core": "1.0.6",
         "eslint-config-airbnb-base": "13.1.0"
     },
     "peerDependencies": {
