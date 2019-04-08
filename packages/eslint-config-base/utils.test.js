@@ -157,6 +157,20 @@ describe('amendRule', () => {
         expect(
             amendRule('error', [null, { red: 1, blue: 2, green: 3 }]),
         ).toEqual(['error', { red: 1, blue: 2, green: 3 }]);
+
+        expect(
+            amendRule(
+                ['error', { red: { colorful: true } }],
+                [null, { red: {} }],
+            ),
+        ).toEqual(['error', { red: {} }]);
+
+        expect(
+            amendRule(
+                ['error', { red: { colorful: true } }],
+                [null, { red: null }],
+            ),
+        ).toEqual(['error', { red: null }]);
     });
 
     test('Mixed arguments', () => {

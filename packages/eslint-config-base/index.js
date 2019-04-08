@@ -31,7 +31,18 @@ module.exports = {
         'operator-linebreak': amendRule(defaults['operator-linebreak'], [
             null,
             'after',
+
+            // Allow multi-line assignment, which Prettier will use if an
+            // assignment is longer than 80 characters.
+            {
+                overrides: Object.assign(
+                    {},
+                    defaults['operator-linebreak'][2].overrides,
+                    { '=': 'after' },
+                ),
+            },
         ]),
         'object-curly-newline': 'off',
+        'allow-parens': 'off',
     },
 };
