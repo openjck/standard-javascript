@@ -1,6 +1,7 @@
 const style = require('eslint-config-airbnb-base/rules/style');
 const variables = require('eslint-config-airbnb-base/rules/variables');
 const bestPractices = require('eslint-config-airbnb-base/rules/best-practices');
+const es6 = require('eslint-config-airbnb-base/rules/es6');
 const { amendRule } = require('./utils');
 
 const defaults = Object.assign(
@@ -8,6 +9,7 @@ const defaults = Object.assign(
     style.rules,
     variables.rules,
     bestPractices.rules,
+    es6.rules,
 );
 
 module.exports = {
@@ -43,6 +45,12 @@ module.exports = {
             },
         ]),
         'object-curly-newline': 'off',
-        'allow-parens': 'off',
+        'arrow-parens': amendRule(defaults['arrow-parens'], [
+            null,
+            null,
+            {
+                requireForBlockBody: false,
+            },
+        ]),
     },
 };
