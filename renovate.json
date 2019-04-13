@@ -6,6 +6,7 @@
         "packagePatterns": [
             "^eslint",
             "^jest",
+            "^npm-run-all$",
             "^prettier"
         ],
         "automerge": true
