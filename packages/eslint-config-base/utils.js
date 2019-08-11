@@ -16,7 +16,7 @@ exports.amendRule = (base, override) => {
         }
         overwritten = override;
     } else if (isObjectLiteral(base)) {
-        overwritten = Object.assign({}, base, override);
+        overwritten = { ...base, ...override };
     } else if (Array.isArray(base)) {
         if (typeof base !== typeof override) return override;
 
@@ -26,7 +26,7 @@ exports.amendRule = (base, override) => {
             }
 
             if (element !== null && isObjectLiteral(element)) {
-                return Object.assign({}, element, override[index]);
+                return { ...element, ...override[index] };
             }
 
             return override[index];

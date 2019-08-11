@@ -4,13 +4,12 @@ const bestPractices = require('eslint-config-airbnb-base/rules/best-practices');
 const es6 = require('eslint-config-airbnb-base/rules/es6');
 const { amendRule } = require('./utils');
 
-const defaults = Object.assign(
-    {},
-    style.rules,
-    variables.rules,
-    bestPractices.rules,
-    es6.rules,
-);
+const defaults = {
+    ...style.rules,
+    ...variables.rules,
+    ...bestPractices.rules,
+    ...es6.rules,
+};
 
 module.exports = {
     extends: ['airbnb-base'],
@@ -37,11 +36,10 @@ module.exports = {
             // Allow multi-line assignment, which Prettier will use if an
             // assignment is longer than 80 characters.
             {
-                overrides: Object.assign(
-                    {},
-                    defaults['operator-linebreak'][2].overrides,
-                    { '=': 'after' },
-                ),
+                overrides: {
+                    ...defaults['operator-linebreak'][2].overrides,
+                    '=': 'after',
+                },
             },
         ]),
         'object-curly-newline': 'off',
